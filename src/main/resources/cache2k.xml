@@ -1,0 +1,43 @@
+<cache2k>
+  <version>1.0</version>
+  <!-- if enabled cache2k does not refuse operation in case there is
+       no configuration for a requested cache name -->
+  <ignoreMissingCacheConfiguration>false</ignoreMissingCacheConfiguration>
+  <defaults>
+    <!-- default settings for every cache -->
+    <cache>
+      <entryCapacity>100_000</entryCapacity>
+      <expireAfterWrite>5m</expireAfterWrite>
+    </cache>
+  </defaults>
+  <caches>
+    <!-- reduced size for the query cache and faster expiry -->
+    <cache>
+      <name>countries</name>
+      <entryCapacity>100</entryCapacity>
+      <expireAfterWrite>1m</expireAfterWrite>
+    </cache>
+    <cache>
+      <name>countriesViaCacheManager</name>
+      <entryCapacity>100</entryCapacity>
+      <expireAfterWrite>1m</expireAfterWrite>
+    </cache>
+    <cache>
+      <name>loadingCountries</name>
+      <entryCapacity>100</entryCapacity>
+      <expireAfterWrite>1m</expireAfterWrite>
+    </cache>
+    <cache>
+      <name>asdf</name>
+    </cache>
+    <cache>
+      <name>asdf2</name>
+    </cache>
+    <cache>
+      <name>hello</name>
+    </cache>
+    <cache>
+      <name>hello2</name>
+    </cache>
+  </caches>
+</cache2k>

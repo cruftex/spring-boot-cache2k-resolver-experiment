@@ -1,0 +1,8 @@
+= Spring Boot cache2k Experiment With a Loading
+
+Adapted from: https://github.com/spring-projects/spring-boot/tree/master/spring-boot-samples/spring-boot-sample-cache
+
+Example for discussion in: https://jira.spring.io/browse/SPR-16503
+
+Code to test cache2k with spring boot and to illustrate how a loading cache can be instantiated via the
+CacheResolver.
